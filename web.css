@@ -1,0 +1,89 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.logo {
+  text-align: center;
+  background: white;
+}
+
+.header {
+  padding: 5px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+
+#nav {
+    font-weight: bold;
+    text-align: center;
+}
+
+#nav a{
+   font-size:30px;
+   text-decoration:none;
+   padding:20px;
+}
+
+
+/* Post image */
+.backimg {
+  display: block;
+  width: auto;
+  margin-left: auto;
+  margin-right: 100px;
+  padding: 5px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+form{
+	padding: 2em;
+}
+
+label{
+	float: left;
+	display: block;
+	text-align: right;
+	width: 8em;
+	padding-right: 1em;
+}
+
+
+input,textarea{	
+	display: block;
+	margin-bottom: 1em;
+}
+
+#submitbutton{
+	margin-left: 9.5em;
+}
