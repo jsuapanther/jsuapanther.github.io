@@ -18,8 +18,57 @@
                <h2>Discussion 6</h2>
             </div>
            <div id="content1">
-               <h2>Have questions?</h2>
-    <form>
+               <h2>Welcome to our Online Pizza ordering form</h2>
+     <form>
+	     <form>
+  <h2>Crust type</h2>
+  <div>
+    <input id="regular" name="crust-type" type="radio" value="regular">
+    <label for="regular"><strong>Regular</strong></label>
+  </div>
+  <div>
+    <input id="thin" name="crust-type" type="radio" value="thin">
+    <label for="thin"><strong>Thin</strong></label>
+  </div>
+  <div>
+    <input id="Deep Dish" name="crust-type" type="radio" value="deep">
+    <label for="Deep Dish"><strong>Deep Dish</strong></label>
+  </div>
+  <div>
+   
+  <h2>Toppings</h2>
+  <div>
+    <input id="topping-cheese" name="cheese" type="checkbox" value="cheese" checked>
+    <label for="topping-cheese"><strong>Cheese</strong></label>
+
+    <label class="visuallyhidden" for="topping-cheese-location">Cheese location</label>
+    <select id="topping-cheese-location" name="cheese-location">
+      <option value="all" selected>All over</option>
+      <option value="half">Half only</option>
+  </select>
+  </div>
+  <div>
+    <input id="topping-pepperoni" name="topping" type="checkbox" value="pepperoni">
+    <label for="topping-pepperoni"><strong>Pepperoni</strong></label>
+  </div>
+  <div>
+    <input id="topping-ham" name="topping" type="checkbox" value="ham">
+    <label for="topping-ham"><strong>Ham</strong></label>
+  </div>
+
+  <h2>Important details</h2>
+  <div>
+    <label for="payment">Method of Payment</label>
+    <select id="payment" name="payment">
+      <option value="cc">Credit Card</option>
+      <option value="ca">Cash</option>
+      <option value="ch" selected>Check</option>
+    </select>
+  </div>
+  <div>
+
+  <a href="payment.html" class="button">Place Order</a>
+</form>
     </form>
    </div>
 </div>
