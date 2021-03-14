@@ -19,48 +19,8 @@
             </div>
            <div id="content1">
                <h2>Have questions?</h2>
-               <p>If you have any questions or would just like to say "Hello", don’t hesitate to reach out to the contact information below, or send a message using the form.</p>
-		<p>Thank you for reading. </p> 
- <h4>(909) 123-4567<br> <a href='mailto:jsuarez3997@panther.chaffey.edu'>jsuarez3997@panther.chaffey.edu</a>  </h4>              
-	<h4>Please fill out your email on the form below and I will respond as soon as I can:</h4>		     
-      <div>
-	<label for="email">* E-mail:</label>      
-        <input type="text" name="email" id="email" />
-        <div id="email_error"></div>
-      </div>
-      <div>
-        <input type="radio" name="gender" id="gender_male" value="male" /> Male
-        <input type="radio" name="gender" id="gender_female" value="female" />Female
-        <div id="gender_error"></div>
-     </div>
-      <input type="submit" value="submit" />
+    <form>
     </form>
-    <script>
-      const email = document.querySelector("#email");
-      const emailError = document.querySelector("#email_error");
-      email.addEventListener("input", () => reset(emailError));
-      const genderMale = document.querySelector("#gender_male");
-      const genderFemale = document.querySelector("#gender_female");
-      const genderError = document.querySelector("#gender_error");
-      genderMale.addEventListener("input", () => reset(genderError));
-      genderFemale.addEventListener("input", () => reset(genderError));
-      function validate() {
-        let res = true;
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value) === false) {
-          emailError.innerHTML = "invalid email address";
-          res = false;
-        }
-        if ((genderMale.checked || genderFemale.checked) == false) {
-          genderError.innerHTML = "please select gender";
-          res = false;
-        }
-        console.log(res);
-        return res;
-      }
-      function reset(element) {
-        element.innerHTML = "";
-      }
-    </script>
    </div>
 </div>
 <div class="footer">
