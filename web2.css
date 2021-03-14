@@ -101,10 +101,10 @@ input,textarea{
   position: absolute;
 }
 
-from {
+form {
   width: 561px;
   margin: 0 auto;
-	
+  postition: relative;	
 }
 body {
   margin: 2em;
