@@ -101,8 +101,11 @@ input,textarea{
   position: absolute;
 }
 
-/* nothing to see here */
-
+from {
+  width: 561px;
+  margin: 0 auto;
+	
+}
 body {
   margin: 2em;
   border: 0;
