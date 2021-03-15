@@ -17,23 +17,14 @@
 	     <h2>Web Security Basics</h2>
             </div>
            <div id="content1">
-           <p><span class="studio">How to use the Internet Safley</span> The internet has revolutionised the way we live our lives – enabling us to read the news, enjoy entertainment, carry out research, book our holidays, buy and sell, shop, network, learn, bank and carry out many other everyday tasks.<br>
 <br>
 Even though apps loom larger in most people's daily online interactions than traditional websites do, that does not mean that the basic Internet safety rules have changed. Hackers are still on the lookout for personal information they can use to access your credit card and bank information..<br>
 <br>
 Almost every major website you visit tracks your online activity.  Tracking technology can follow you from site to site, track and compile your activity, and compile all of this into a database.  Generally, tracking utilizes a numerical identifier, rather than your real name.  This information is used to personalize the content that you see online.<br>
 <br>
-Here are some links about using the internet safely, where I got the information above, that get into more detail about this subject:<br>
-<br>
 <ul>
   <li><a href=https://privacyrights.org/consumer-guides/online-privacy-using-internet-safely>Online Privacy: Using the Internet Safely | Privacy Rights </a></li>
   Gives information on how to deal with these topics: Online Tracking, Mobile Apps, Privacy Policies, Accessing the Internet, Passwords, Wireless Networks and Wi-Fi<br>
-  <br>
-  <li><a href="https://www.getsafeonline.org/protecting-your-computer/safe-internet-use/">Safe Internet Use | Get Safe Online</a></li>
-  Gives you the risks of visiting malicious, criminal or inappropriate websites, how to know what a secure website looks like, what to do about cookies(not the kind you eat), and what to do if you Encounter Illegal Material.<br> 
-  <br>
-  <li><a href="https://usa.kaspersky.com/resource-center/preemptive-safety/top-10-internet-safety-rules-and-what-not-to-do-online">Top 10 Internet Safety Rules | Kaspersky</a></li>
-  Gives the Top 10 Internet safety rules to follow to help you avoid getting into trouble online (and offline)<br>
   <br>
   <li><a href="https://us.norton.com/internetsecurity-kids-safety-stop-stressing-10-internet-safety-rules-to-help-keep-your-family-safe-online.html">20 internet safety tips and checklist to help families stay safer</a></li>
   Gives detail examples of how to keep your kids safe as they navigate online.
@@ -43,14 +34,12 @@ Here are some links about using the internet safely, where I got the information
 
 <script>
 var txt = "";
+txt += "<p>Browser Language: " + navigator.language + "</p>";
 txt += "<p>Browser CodeName: " + navigator.appCodeName + "</p>";
 txt += "<p>Browser Name: " + navigator.appName + "</p>";
+txt += "<p>Browser Online: " + navigator.onLine + "</p>";
 txt += "<p>Browser Version: " + navigator.appVersion + "</p>";
 txt += "<p>Cookies Enabled: " + navigator.cookieEnabled + "</p>";
-txt += "<p>Browser Language: " + navigator.language + "</p>";
-txt += "<p>Browser Online: " + navigator.onLine + "</p>";
-txt += "<p>Platform: " + navigator.platform + "</p>";
-txt += "<p>User-agent header: " + navigator.userAgent + "</p>";
 
 document.getElementById("browser").innerHTML = txt;
 </script><br> 
