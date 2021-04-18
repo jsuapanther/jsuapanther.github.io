@@ -35,20 +35,16 @@
       var dateFirst = new Date(dateInput);
       var dateSecond = new Date(systemDate);
 
-      // time difference
       var timeDiff = Math.abs(dateSecond.getTime() - dateFirst.getTime());
 
-      // days difference
       var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
 
-      //calculate day , month and year
       year = Math.floor(diffDays / 365);
       diffDays = diffDays - year * 365;
       month = Math.floor(diffDays / 30);
       diffDays = diffDays - month * 30;
       day = diffDays;
 
-      // display day,month and year
       var message =
         "day: " +
         day.toString() +
